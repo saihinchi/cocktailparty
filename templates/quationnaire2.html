@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<title>CocktailParty</title>
+<script language="javascript" type="text/javascript">
+
+window.addEventListener('load', function(){
+	document.getElementById("RRR").addEventListener('click', RanRan);});
+
+
+
+function RanRan()
+{
+    document.getElementById("sound").load();
+    document.getElementById("sound").play();
+}
+
+function audio() {
+    document.getElementById('btn_audio').currentTime = 0; //連続クリックに対応
+    document.getElementById('btn_audio').play(); //クリックしたら音を再生
+}
+
+</script>
+<style>
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 600px;
+}
+
+option {
+  padding: 0;
+}
+
+input[type="range"] {
+  width: 600px;
+  margin: 20px;
+}
+
+</style>
+</head>
+<body>
+
+  <h2>音声{{trial}}人目/21人</h2>
+  <h2>以下の音声を聞いてその印象を応えてください（音声は何度でも再生することが可能です）</h2>
+
+  
+  <input type="button" value="再生" onclick="audio()" class="audio_button">
+ 
+<audio id="btn_audio">
+    <source src="integrated_voice/impression/{{name}}/{{sound}}" type="audio/wav">
+</audio>
+
+<br><br>
+
+{% if trial == 21%} 
+<form method="post" action="/quationnaire_ex" name="faceForm">
+  
+  <h3>1.声が魅力的に感じるか</h3>
+  全くそう思わない<input type="range" name="attractive" list="attractive_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>2.自分の声だと感じるか</h3>
+  全くそう思わない<input type="range" name="imitate" list="imitate_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>3.声に親しみを感じるか</h3>
+  全くそう思わない<input type="range" name="familiarity" list="familiarity_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>4.自信がある声に感じるか</h3>
+  全くそう思わない<input type="range" name="confidence" list="confidence_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>5.聞き取りやすい声か</h3>
+  全くそう思わない<input type="range" name="clear" list="clear_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <input type="submit" value="Send">
+</form>
+
+{% else%} 
+<form method="post" action="/quationnaire2" name="faceForm">
+  
+  <h3>1.声が魅力的に感じるか</h3>
+  全くそう思わない<input type="range" name="attractive" list="attractive_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>2.自分の声だと感じるか</h3>
+  全くそう思わない<input type="range" name="imitate" list="imitate_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>3.声に親しみを感じるか</h3>
+  全くそう思わない<input type="range" name="familiarity" list="familiarity_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>4.自信がある声に感じるか</h3>
+  全くそう思わない<input type="range" name="confidence" list="confidence_list" min="0" max="100" >とてもそう思う
+
+  <br>
+
+  <h3>5.聞き取りやすい声か</h3>
+  全くそう思わない<input type="range" name="clear" list="clear_list" min="0" max="100" >とてもそう思う
+
+  <br>
+  
+  <input type="submit" value="Send">
+</form>
+
+{% endif %}
+
+</body>
+</html>

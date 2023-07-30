@@ -1,0 +1,198 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+h1{
+  text-align:center;
+  font-size: 80.0%;
+}
+
+h1{
+  padding-bottom: 20px;
+}
+
+p{
+  font-size: 15px;
+}
+
+/*音声を再生するボタン*/
+.audio_button {
+  /* input要素のうちtype属性値がbuttonのものに対して装飾 */
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : justify;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+
+
+/*練習問題の回答ボタン*/
+
+button {
+  width: 10%;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+/*ボタン用の設定*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+/*赤0などの選択ボタン*/
+.inner {
+padding-top: 30px;
+display: flex;
+justify-content: space-evenly;
+}
+
+
+.wakaranai input{
+  margin-right: 100px;
+}
+
+.wakaranai p{
+  display: table-cell;
+  vertical-align: top;
+}
+
+.wakaranai{
+  padding-top: 10px;
+  display: flex;
+  text-align: left;
+}
+
+.btn--red,
+a.btn--red {
+  color: #fff;
+  background-color: #eb0000;
+}
+
+.btn--red:hover,
+a.btn--red:hover {
+  color: #fff;
+  background: #eb0000;
+}
+
+.btn--blue,
+a.btn--blue {
+  color: #fff;
+  background-color: #002beb;
+}
+
+.btn--blue:hover,
+a.btn--blue:hover {
+  color: #fff;
+  background: #002beb;
+}
+
+
+.btn--white,
+a.btn--white {
+  color: #000000;
+  background-color: #fff;
+}
+
+.btn--white:hover,
+a.btn--white:hover {
+  color: #000000;
+  background: #fff;
+}
+
+
+.btn--black,
+a.btn--black {
+  color: #fff;
+  background-color: #000000;
+}
+
+.btn--black:hover,
+a.btn--black:hover {
+  color: #fff;
+  background: #000000;
+}
+
+
+.btn--pink,
+a.btn--pink {
+  color: #fff;
+  background-color: #eb00d8;
+}
+
+.btn--pink:hover,
+a.btn--pink:hover {
+  color: #fff;
+  background: #eb00d8;
+}
+
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);
+}
+
+
+.btn--wakaranai,
+a.btn--wakaranai {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn--wakaranai:hover,
+a.btn--wakaranai:hover {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.nodisplay {
+    display: none;
+}

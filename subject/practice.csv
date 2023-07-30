@@ -1,0 +1,11 @@
+﻿TrialNo,audio file,cond,TargetSub,TargetCallSign,TargetColorNo,DistSub,DistCallSign,DistColorNo
+1,1.wav,SelfDistractor,NA1037,ネコは,モモの10,NB2047,シカ,クロの3
+2,2.wav,Other,NA1017,イヌは,モモの4,NA1025,トリ,アカの7
+3,3.wav,Other,NA1013,ネコは,アカの3,NA1015,サル,アカの3
+4,4.wav,Other,NA1015,イヌは,シロの9,NA1023,トリ,シロの6
+5,5.wav,Other,NA1023,シカは,クロの10,NA1021,イヌ,クロの10
+6,6.wav,Other,NA1033,トリは,アオの8,NA1013,トラ,アオの8
+7,7.wav,SelfDistractor,NA1023,トリは,モモの0,NB2047,イヌ,アオの3
+8,8.wav,Other,NA1027,シカは,シロの9,NA1019,イヌ,モモの9
+9,9.wav,SelfTarget,NB2047,トラは,モモの0,NA1013,トリ,クロの4
+10,10.wav,SelfDistractor,NA1015,シカは,ニジの0,NB2047,ネコ,シロの4

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+{% block body %}
+
+{% if name %} 
+<h2>こんにちは，参加者 {{ name }} さん</h2>
+{% else %}
+<h2>こんにちは</h2>
+{% endif %}
+
+<h3> 参加者IDを入力してください </h3>
+
+
+<form method="post" action="/sound_test">
+    <input type="text" name="name" pattern="^[0-9a-zA-Z]+$" placeholder="参加者ID" required><input type="submit" value="Send">
+</form>
+{% endblock %}
+

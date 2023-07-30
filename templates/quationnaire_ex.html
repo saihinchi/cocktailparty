@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<title>CocktailParty</title>
+<script language="javascript" type="text/javascript">
+
+</script>
+<style>
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.inner {
+padding-top: 30px;
+display: flex;
+justify-content: space-evenly;
+}
+
+.btn--red,
+a.btn--red {
+  color: #fff;
+  background-color: #eb0000;
+}
+
+.btn--red:hover,
+a.btn--red:hover {
+  color: #fff;
+  background: #eb0000;
+}
+
+.btn--blue,
+a.btn--blue {
+  color: #fff;
+  background-color: #002beb;
+}
+
+.btn--blue:hover,
+a.btn--blue:hover {
+  color: #fff;
+  background: #002beb;
+}
+
+
+.btn--white,
+a.btn--white {
+  color: #000000;
+  background-color: #fff;
+}
+
+.btn--white:hover,
+a.btn--white:hover {
+  color: #000000;
+  background: #fff;
+}
+
+
+.btn--black,
+a.btn--black {
+  color: #fff;
+  background-color: #000000;
+}
+
+.btn--black:hover,
+a.btn--black:hover {
+  color: #fff;
+  background: #000000;
+}
+
+
+.btn--pink,
+a.btn--pink {
+  color: #fff;
+  background-color: #eb00d8;
+}
+
+.btn--pink:hover,
+a.btn--pink:hover {
+  color: #fff;
+  background: #eb00d8;
+}
+
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+</style>
+</head>
+<body>
+
+<h2>以下の質問に半角数字でお答えください．</h2>
+
+<br><br>
+
+<form method="post" action="/quationnaire_finish" name="faceForm">
+  <h3>1.音声を含む動画などをSNSに投稿することは週に何回程度ありますか。（半角数値入力）</h3>
+  <input type="number"  name="quationnaire1" required><br><br><br>
+
+
+  <h3>2.発表・プレゼンの練習や歌う練習などのために、自分の声を録音したり、声を含む録画をすることは週に何回程度ありますか。（半角数値入力）</h3>
+  <input type="number"  name="quationnaire2" required><br><br><br>
+
+
+  <h3>3.読書中や何かを考えている時、自分が声を発していないのにもかかわらず自分の声が聞こえてくることは週に何回程度ありますか。（半角数値入力）</h3>
+  <input type="number"  name="quationnaire3" required><br><br><br>
+
+
+  <input type="submit" value="Send"><br>
+</form>
+
+</body>
+</html>

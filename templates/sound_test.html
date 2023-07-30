@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>CocktailParty</title>
+    <script language="javascript" type="text/javascript">
+  var music = new Audio();
+  function init() {
+    music.preload = "auto";
+    music.src = "integrated_voice/sound_test/sound_test.wav";
+    music.load();
+
+  }
+
+  function play() {
+    music.play();
+  }
+
+  function stop() {
+    music.pause();
+    music.currentTime = 0;
+  }
+
+  init();
+    </script>
+</head>
+<body>
+{% if name %} 
+<h2>こんにちは，参加者ID {{ name }} さん</h2>
+{% endif %}
+
+
+<h3> 
+  まず、音量調節をしていただきます。イヤホン・ヘッドホンを使用してください。<br>
+
+  「再生」ボタンを押して流れる音が、ギリギリ聞こえるか聞こえないかくらいの音量になるようにご自身のPC上で設定してください。<br><br>
+
+  <button onclick="play()" id="play">再生</button><br><br>
+  
+  今設定した音量はテスト終了まで変更しないようにしてください。<br>
+  
+  また、テスト終了までイヤホン・ヘッドホンは使用したままでお願いします。<br><br>
+  
+  音量調節ができたら「練習に進む」をクリックしてください。
+  
+</h3>
+
+<br><br>
+
+<input type="button" onclick="location.href='practice1'"value="練習に進む">
+
+</body>
+

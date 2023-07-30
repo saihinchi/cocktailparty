@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<title>CocktailParty</title>
+<script language="javascript" type="text/javascript" src="{{ url_for('static',filename='js/experiment.js') }}"></script>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/experiment.css') }}">
+</head>
+<body>
+
+<h2>{{trial}}/10回目の実験</h2>
+<h1><font size="+20">{{animal}}</font>どこへ？</h1>
+
+  <input type="button" value="再生" id="RRR" onclick="this.disabled=true;" class="audio_button">
+ 
+<audio id="sound">
+    <source src="integrated_voice/practice/{{trial}}.wav" type="audio/wav">
+</audio>
+
+
+<div class="nodisplay">
+  <p id="watchArea" display: none;></p>
+</div>
+
+
+<div class="inner">
+  <input id="P" class="btn btn--red" type="button" value="赤0" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤1" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤3" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤4" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤6" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤7" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤8" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤9" onClick="addTF(this.value)"><br>
+  <input id="P" class="btn btn--red" type="button" value="赤10" onClick="addTF(this.value)"><br>
+</div>
+
+
+<div class="inner">
+<input id="P" class="btn btn--blue" type="button" value="青0" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青1" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青3" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青4" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青6" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青7" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青8" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青9" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--blue" type="button" value="青10" onClick="addTF(this.value)"><br>
+</div>
+
+<div class="inner"> 
+<input id="P" class="btn btn--black" type="button" value="黒0" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒1" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒3" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒4" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒6" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒7" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒8" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒9" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--black" type="button" value="黒10" onClick="addTF(this.value)"><br>
+</div>
+
+<div class="inner">
+<input id="P" class="btn btn--white" type="button" value="白0" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白1" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白3" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白4" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白6" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白7" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白8" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白9" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--white" type="button" value="白10" onClick="addTF(this.value)"><br>
+</div>
+
+<div class="inner">
+<input id="P" class="btn btn--pink" type="button" value="桃0" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃1" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃3" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃4" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃6" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃7" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃8" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃9" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--pink" type="button" value="桃10" onClick="addTF(this.value)"><br>
+</div>
+
+<div class="inner">
+<input id="P" class="btn btn--orange" type="button" value="虹0" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹1" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹3" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹4" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹6" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹7" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹8" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹9" onClick="addTF(this.value)"><br>
+<input id="P" class="btn btn--orange" type="button" value="虹10" onClick="addTF(this.value)"><br>
+</div>
+
+<div class="wakaranai">
+  <input id="P" class="btn btn--wakaranai" type="button" value="わからない" onClick="addTF(this.value)"><br>
+
+  <button class="ans" onclick="display()">回答を表示</button>
+  <div id="view" style="display: none;" >
+    <p><font size="3px">答えは{{animal_ans}}</font></p>
+  </div>
+</div>
+
+{% if trial == 10%} 
+
+
+<form method="post" action="/practice_finish" name="faceForm">
+  <p><font size="+1">回答：</font><input type="text" name="face"  required="required"></p>
+  <div class="nodisplay">
+    <p>かかった時間：<input type="text" name="time" readonly="readonly"></p>
+  </div>
+  <input type="submit" value="練習を終わる">
+</form>
+
+<br>
+
+{% else%} 
+
+
+
+
+<form method="post" action="/practice2" name="faceForm">
+  <p><font size="+1">回答：</font><input type="text" name="face"  required="required"></p>
+  <div class="nodisplay">
+    <p>かかった時間：<input type="text" name="time" readonly="readonly"></p>
+  </div>
+  <input type="submit" value="次の問題に進む">
+</form>
+
+
+{% endif %}
+
+</body>
+</html>
