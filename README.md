@@ -50,6 +50,12 @@ URLにアクセス後，以上の手順を進めていってもらう形とな�
 AWSのEC2を使う場合は以下のサイトが非常に参考になるのでこちらを参照ください．
 https://zenn.dev/century/articles/6b7d6ad29605f8
 
+また，インフラ構築はAWSを採用し，以下のような設計で行いました．参照ください．
+<p align="center">
+  <img src="system_design.png" alt="Size Limit CLI" width="738">
+</p>
+
+
 # Installation
 
 以上のモジュールをインストールする場合は，requirements.txtにパッケージ名を記載し，以下をベースディレクトリにて実行ください．
