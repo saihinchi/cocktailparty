@@ -62,7 +62,7 @@ https://zenn.dev/century/articles/6b7d6ad29605f8
 音声ファイルは，複数の音声が重なって聞こえるような音声が必要となります．
 Matlabなどで作成できますので，そちらを使用して準備してください．
 
-その後，上述のサイト（https://zenn.dev/century/articles/6b7d6ad29605f8）
+その後，上述のサイト（https://zenn.dev/century/articles/6b7d6ad29605f8 ）
 にアプリの実行方法まで書いてますのでそちらを参考に実行してください．
  
 # Note
